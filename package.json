@@ -11,12 +11,8 @@
     "test:watch": "yarn test --watchAll",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "build-storybook": "build-storybook -s ./public",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*": [
